@@ -21,6 +21,13 @@ export default defineConfig((env) => {
     },
 
     plugins: [vue()],
+
+    build: {
+      rollupOptions: {
+        external: ['vue-3-slider-component'], 
+      },
+    },
+
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
