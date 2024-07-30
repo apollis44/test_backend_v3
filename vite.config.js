@@ -1,7 +1,6 @@
 import { fileURLToPath, URL } from 'node:url';
 import vue from '@vitejs/plugin-vue';
 import { defineConfig, loadEnv } from 'vite';
-import { generateNonce } from './utils';
 
 export default defineConfig((env) => {
   const envars = loadEnv(env.mode, './');
@@ -21,8 +20,7 @@ export default defineConfig((env) => {
           'cytoscape',
           'cytoscape-fcose',
           'vue3-popper',
-          'd3',
-          'crypto'
+          'd3'
         ],
       },
     },
