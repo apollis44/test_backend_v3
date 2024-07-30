@@ -39,7 +39,7 @@ export default defineConfig((env) => {
         [serverAPIPath]: serverURL.origin,
       },
       headers: {
-        'Content-Security-Policy': `default-src 'none'; script-src 'unsafe-inline';`,
+        'Content-Security-Policy': `default-src 'none'; script-src 'self' 'unsafe-inline';`, 
       },
     },
   };
