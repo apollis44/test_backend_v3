@@ -11,13 +11,6 @@ app.use(cors());
 app.use(morgan('combined'));
 app.use(bodyParser.text());
 
-app.use("/", express.static("../dist"));
-
-// Handle all other requests by serving the index.html for your frontend
-app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../dist"));
-  });
-
 const libsbmlInstance = libsbml();
 
 // Adapt your Express route
