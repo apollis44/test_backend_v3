@@ -11,6 +11,8 @@ app.use(cors());
 app.use(morgan('combined'));
 app.use(bodyParser.text());
 
+app.use("/", express.static("../dist"));
+
 const libsbmlInstance = libsbml();
 
 // Adapt your Express route
