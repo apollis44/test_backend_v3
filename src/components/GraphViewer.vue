@@ -9,7 +9,7 @@
   <div id="graphHolder"></div>
 </template>
 
-<script nonce="<%= nonce %>">
+<script>
 import TurnSBMLtoCytoscape from '../services/Request'
 import cytoscape from 'cytoscape';
 import fcose from 'cytoscape-fcose';

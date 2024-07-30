@@ -18,7 +18,7 @@
   </div>
 </template>
 
-<script nonce="<%= nonce %>">
+<script>
 import { ref } from 'vue'
 import ModelViewer from './src/components/ModelViewer.vue';
 
