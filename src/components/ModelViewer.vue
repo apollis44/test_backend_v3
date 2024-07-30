@@ -42,7 +42,7 @@
     </div>
 </template>
 
-<script>
+<script nonce="<%= nonce %>">
 import SingleViewer from './SingleViewer.vue'
 import MultipleViewer from './MultipleViewer.vue'
 import GraphViewer from './GraphViewer.vue'

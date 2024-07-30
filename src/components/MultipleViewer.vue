@@ -2,7 +2,7 @@
     <div id="ViewerContainer"></div>    
 </template>
 
-<script>
+<script nonce="<%= nonce %>">
 import * as d3 from 'd3'
 
 export default {

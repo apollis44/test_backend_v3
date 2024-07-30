@@ -16,7 +16,7 @@
     <svg id="ViewerContainer"></svg>    
 </template>
 
-<script>
+<script nonce="<%= nonce %>">
 import * as d3 from 'd3'
 import { getTextWidth } from "./functions.js"
 import VueSlider from 'vue-3-slider-component'
