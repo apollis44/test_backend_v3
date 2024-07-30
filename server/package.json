@@ -16,6 +16,7 @@
     "express": "^4.19.2",
     "libsbmljs_stable": "^5.17.0-beta1",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "serverless-http": "^3.2.0"
   }
 }
