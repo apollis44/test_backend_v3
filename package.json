@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=v16"
+  },
   "scripts": {
-    "dev": "concurrently \"nodemon ../server/src/main.js\" \"vite\"",
+    "dev": "concurrently \"nodemon ./server/main.js\" \"vite\"",
     "build": "vite build",
-    "start": "NODE_ENV=production node ../server/src/main.js",
     "preview": "vite preview"
   },
   "dependencies": {

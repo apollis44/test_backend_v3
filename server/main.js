@@ -3,7 +3,6 @@ const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const libsbml = require('libsbmljs_stable');
-const serverless = require('serverless-http'); // Import serverless-http adapter
 const { convertSBMLtoCytoscape } = require('./sbml-to-cytoscape');
 
 const app = express();
@@ -15,10 +14,11 @@ app.use(bodyParser.text());
 const libsbmlInstance = libsbml();
 
 // Adapt your Express route
-app.post('/.netlify/functions/index', (req, res) => {  // Update route for Netlify Functions
+app.post('/sbml', (req, res) => {  // Update route for Netlify Functions
     const graph = convertSBMLtoCytoscape(libsbmlInstance, req.body);
     res.send(graph);
 });
 
-// Export the handler for Netlify Functions
-module.exports.handler = serverless(app); 
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
