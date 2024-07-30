@@ -24,7 +24,7 @@ export default defineConfig((env) => {
 
     build: {
       rollupOptions: {
-        external: ['vue-3-slider-component'], 
+        external: ['vue-3-slider-component', '@reside-ic/odinjs', 'cytoscape', 'cytoscape-fcose', 'vue3-popper', 'd3'], 
       },
     },
 
